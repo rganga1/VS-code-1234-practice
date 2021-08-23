@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+  <!-- <script src='main.js'></script> -->
+  <style>
+    .container{
+      display:flex;
+      width:20.4cm;
+      height:29.1cm;
+      border:darkgoldenrod 3px solid;
+      border-radius: 16px;
+      padding: 16px;
+    }
+    .left{
+      background-color: darkblue;
+      width:35%;
+      color: white;
+      text-align: center;
+    }
+    .right{
+      color:darkblue;
+      text-align:left;
+      width:65%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    img{
+       height:16px;
+       /* width:20px; */
+    }
+    
+    .left ul{
+      text-align: left;
+      margin-left: -16px;
+    }
+    li{
+      text-align: justify;
+      margin-right: 8px;
+    }
+    .education{
+      margin: 0 8px;
+    }
+    .education img{
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+    }
+    .heading{
+      color:brown;
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .border {
+      border: 2px solid brown; 
+      border-radius:16px;
+      margin:0 8px 0 8px;
+      padding:0 8px 0 8px;
+    }
+    #project li{
+      margin: 0;
+      padding: 36px 0 36px 84px;
+      list-style: none;
+      background-image: url("../../images/checked_red.svg");
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 40px;
+    }
+    a{
+      color:white;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1 style="margin-bottom: 0; font-family: 'Itim', cursive;">Rakesh G</h1>
+      <h3 style="display: inline; ">( IIT, NIT</h3> Alumni ) <br><br>
+
+      <ul style="text-align: justify; list-style-type: none;font-size: small;" >
+      <li><img id="phone" src="/Images-CV/phone.png">
+      9449558873 </li>
+      <li ><img src="/Images-CV/email.png"> <a type="email" href="mailto: rakeshgangavati3@gmail.com" target="_blank">rakeshgangavati3@gmail.com</a> </li>
+      <li><img src="/Images-CV/github.png"> <a href="https://github.com/rakeshgangavati" target="_blank">github.com/rakeshgangavati</a></li>
+      <li><img src="/Images-CV/Linked in.png"> <a href="https://linkedin.com/in/rakesh-g-160191186" target="_blank">linkedin.com/rakesh-g</a></li>
+      </ul>
+
+      <div id="skills">
+        <h3 style="margin-bottom: 0px;">Skills</h3>
+        <hr style="width:75%">
+        Languages/Frameworks:
+        <ul style="text-align: justify;">
+          <li>Java, OOPs</li>
+          <li>JavaScript, ES6</li>
+          <li>JSON & AJAX</li>
+          <li>HTML5, CSS3, Bootstrap</li>
+          
+        </ul>
+      </div>  
+
+      <div>
+        <!-- <h3> Tools</h3> -->
+        Tools:
+        <ul>
+          <li>Github</li>
+        </ul>
+      </div>
+      
+      <!-- <div style="text-align: left;"> -->
+        <!-- style="margin-right: 32px;" -->
+      
+        <h3 style="margin-bottom: 0;">Education</h3> <hr style="width: 75%;">
+        <div class="education" style="text-align: left;">
+        <!-- <ul>
+          <li>
+            <img src="/Images-CV/IIT Madras.png">
+            IIT Madras - Masters in Computational and Experimental Mechanics - 
+            CGPA 8/10 - 2019
+          </li>
+          <li>
+            <img src="/Images-CV/Nitk surathkal.jpg">
+            NIT surathkal - BTech in Civil Engineering - 2015 - CGPA 8.5/10 - 2015
+          </li>
+        </ul> -->
+        <dl>
+          <dt><img src="/Images-CV/IIT Madras.png"> IIT Madras</dt>
+          <dd>Masters in Computational and Experimental Mechanics <br>
+            CGPA 8/10 - 2019</dd>
+          <dt><img src="/Images-CV/Nitk surathkal.jpg">
+            NIT surathkal </dt>  
+          <dd>BTech in Civil Engineering <br> CGPA 8.5/10 - 2015</dd>  
+        </dl>
+      </div>
+      
+      <!-- End of left flex -->
+    </div>
+    
+    <div class="right">
+      
+      <h3 class="heading">Profile</h3>
+      <div class="border" style="margin-left: 8px;">
+        <ul>
+          <li>
+            Upcoming software professional offering strong foundation in programming
+            and problem solving.  
+          </li>
+          <li>
+            Experience in Front-End Web development, object oriented programming
+          </li>
+        </ul>
+      </div>  
+
+
+      <h3 class="heading">Certifications</h3>
+      <div class="border" >
+        <ul>
+          <li>Currently pursuing MERN Full Stack Specialization @ Upgrad 
+            <span style="font-size: 14px;"> (Mongo DB, Express_JS, React_JS, Node_JS) (Since May 2021)  ETA - oct 2021</span>
+          </li>
+          <li>
+            Learning end to end web development with React_js and Express_js for Front-End
+            development and Node_js for Back-End development
+          </li>
+        </ul>
+      </div>
+
+      <h3 class="heading" id="project">Projects</h3>
+      <div class="border">
+        OOP - Object oriented programming with Java
+        <ul>
+          <!-- <li style="list-style-image: url(/Images-CV/project-icon.png);"> -->
+          <li style="list-style-type: square;" > 
+            Designed a flight reservation system to keep track of all tickets, flights
+            and passenger using principles of OOP. Created UML diagram and implemented the
+            flows in plain Java classes. Below are the cases handled:
+            <ul>
+              <li>Flight Availability, capacity, arrival and departure time</li>
+              <li>Passenger registration</li>
+              <li>Flight booking - Regular and Tourist tickets</li>
+              <li>Ticket tracking - Flight status, PNR number</li>
+            </ul>
+          </li>
+        
+          <li style="list-style-type: square;">
+            Designed an Inventory Management System to keep track of all products, vendors,
+            customers and orders with the following features:
+            <ul>
+              <li>Product tracking</li>
+              <li>Customer and Vendor tracking</li>
+              <li>Sales and Purchases</li>
+              <li>Inventory tracking</li>
+          </li>
+      
+          </ul>
+        </ul>
+      </div>
+
+    </div>
+
+    
+
+
+  
+  
+  </div>
+</body>
+</html>
